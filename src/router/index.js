@@ -1,23 +1,54 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import Layout from "@/views/layout.vue";
+import Login from "@/views/login.vue";
+import Register from "@/views/register.vue";
+import Article from "@/views/article.vue";
+import Detail from "@/views/detail.vue";
+import Like from "@/views/like.vue";
+import Collect from "@/views/collect.vue";
+import User from "@/views/user.vue";
 
 Vue.use(VueRouter);
 
+/**
+ * @type {import("vue-router").RouteConfig[]}
+ */
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    component: Layout,
+    redirect: "/article", // 重定向
+    children: [
+      {
+        path: "article",
+        component: Article,
+      },
+      {
+        path: "like",
+        component: Like,
+      },
+      {
+        path: "collect",
+        component: Collect,
+      },
+      {
+        path: "user",
+        component: User,
+      },
+    ],
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/login",
+    component: Login,
+  },
+  {
+    path: "/register",
+    component: Register,
+  },
+  {
+    path: "/article/:id",
+    component: Detail,
   },
 ];
 

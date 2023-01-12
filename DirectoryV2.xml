@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <trees>
+     <tree path="/src/api" title="存储接口文件"/>
+     <tree path="/src/assets" title="图片文件"/>
+     <tree path="/src/utils" title="工具模块"/>
+     <tree path="/src/utils/request.js" title="数据请求模块" extension="js"/>
+     <tree path="/src/utils/storage.js" title="本地存储封装模块" extension="js"/>
+     <tree path="/src/utils/vant-ui.js" title="封装vant按需引入组件" extension="js"/>
+ </trees>
