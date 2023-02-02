@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  // console.log(a);
+  // const a = 1;
+  // console.log(a);
+
+  // const obj = {
+  //   a: 1,
+  //   b: 2,
+  // };
+  // obj.a = obj.b;
+  // console.log(obj.a, obj.b);
+
+  // const obj = {
+  //   a: 1,
+  //   b: 2,
+  //   sum: function() {
+  //     // this指向谁
+  //     // 箭头函数中的this指向谁，取决于箭头函数的定义时的上下文
+  //     console.log(this);
+  //     return this.a + this.b; // NAN
+  //   }
+  // };
+  //
+  // const a = obj.sum;
+  //
+  // // 单独调用
+  // console.log(a());
+  // console.log(obj.sum());
+
+  // const getSum1 = (...args) => (...args2) => args.concat(args2).reduce((a, b) => a + b, 0);
+  //
+  // // const getSum = (...args1) => (...args2) => args1.concat(args2).reduce((a, b) => a + b, 0);
+  //
+  // const result = getSum1(1, 2, 3)(4, 5, 6);
+  //
+  // console.log(result);
+
+
+  // const p = new Promise((resolve, reject) => {
+  //   // throw new Error('错误')
+  //   a()
+  // })
+  //
+  // p.catch(err => {
+  //   console.log(err);
+  // })
+
+  // async function show() {
+  //   await 1
+  // }
+  //
+  // console.log(show());
+
+  const obj = {}
+
+  for (const objElement of obj) {
+    console.log(objElement);
+  }
+</script>
+</body>
+</html>

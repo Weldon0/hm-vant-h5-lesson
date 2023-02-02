@@ -5,7 +5,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  watch: {
+    count() {
+      console.log("2332");
+    },
+  },
+  methods: {
+    changeCOunt() {
+      this.count++;
+      this.count++;
+      this.count++;
+      this.count++;
+      this.count++;
+      this.count++;
+      this.count++;
+    },
+  },
+};
 </script>
 
 <style scoped></style>

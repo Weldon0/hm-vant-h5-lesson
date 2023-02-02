@@ -6,4 +6,16 @@
      <tree path="/src/utils/request.js" title="数据请求模块" extension="js"/>
      <tree path="/src/utils/storage.js" title="本地存储封装模块" extension="js"/>
      <tree path="/src/utils/vant-ui.js" title="封装vant按需引入组件" extension="js"/>
- </trees>
+     <tree path="/src/views/article.vue" title="文章列表组件" extension="vue"/>
+     <tree path="/src/views/collect.vue" title="收藏组件" extension="vue"/>
+     <tree path="/src/views/detail.vue" title="文章详情" extension="vue"/>
+     <tree path="/src/views/layout.vue" title="布局组件" extension="vue"/>
+     <tree path="/src/views/like.vue" title="喜欢组件" extension="vue"/>
+    <tree path="/src/views/login.vue" title="登录组件" extension="vue"/>
+    <tree path="/src/views/register.vue" title="注册组件" extension="vue"/>
+    <tree path="/src/views/user.vue" title="我的组件" extension="vue"/>
+    <tree path="/src/App.vue" title="根组件" extension="vue"/>
+    <tree path="/src/main.js" title="项目入口" extension="js"/>
+    <tree path="/vue.config.js" title="vue项目配置文件" extension="js"/>
+    <tree path="/src/components/article-item.vue" title="文章列表项组件" extension="vue"/>
+</trees>
